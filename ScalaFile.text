@@ -3,8 +3,14 @@ Hello, This is scala file
 Scala definitions
 
 Unit class:=> It's subype of AnyVal.It has just one value () which is not a object, It basically copies void concept from java.
+executing a statement in a function with no return type is basically a Unit return type function.
+
 Null class:=> Its subtype of AnyRef.it has just one value null. It is used by JVM for null references.
-Nothing class:=> its subtype of any other type(even Null).It sits on lowest level of scala class hirarchie. When a function throws a
-exception this function essentially represents nothing as return type.
-Nil object:=> List[Nothing] equals Nil. It basically represents empty list.
-None object: Option[Nothing] equals None.
+
+Nothing class:=> Nothing is a Trait. Its a subtype of everything. But not superclass of anything. There are no instances of Nothing.
+When a function throws a exception this function essentially represents nothing as return type.
+
+Nil object:=> List[Nothing] equals Nil. Represents an emptry List of anything of zero length.
+Its not that it refers to nothing but it refers to List which has no contents
+
+None object: Used to represent a sensible return value. Just to avoid null pointer exception. Option has exactly 2 subclasses- Some and None. None signifies no result from the method.

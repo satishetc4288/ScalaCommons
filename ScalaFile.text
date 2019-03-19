@@ -1,1 +1,10 @@
 Hello, This is scala file
+
+Scala definitions
+
+Unit:=> It's subype of AnyVal.It has just one value () which is not a object, It basically copies void concept from java.
+Null:=> Its subtype of AnyRef.it has just one value null. It is used by JVM for null references.
+Nothing:=> its subtype of any other type(even Null).It sits on lowest level of scala class hirarchie. When a function throws a
+exception this function essentially represents nothing as return type.
+Nil:=> List[Nothing] euals Nil. It basically represents empty list.
+None: Option[Nothing] equals None.

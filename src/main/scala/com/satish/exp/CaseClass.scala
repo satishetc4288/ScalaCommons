@@ -14,7 +14,7 @@ object CaseClass extends App {
 
     case SMS(message, sender) => s"Received SMS from $sender, with body: $message"
 
-    case _ => "Unknown notications"
+    case _ => "Unknown notications "
   }
 
   val notifications = readNotifications(Email("satish.sonu@gmail.com", "hi how are you sirjee", "greeting"))
